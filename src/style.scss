@@ -1,0 +1,29 @@
+.MuiPagination-root {
+  .MuiPagination-ul {
+     flex-wrap: nowrap;
+     li {
+       &:first-child {
+         flex-basis: 100%;
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         > button::after {
+           margin-left: 10px;
+           content: 'previous';
+           color: red;
+         }
+         
+       }
+       &:last-child {
+         flex-basis: 100%;
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         > button::before {
+           margin-right: 10px;
+           content: 'next';
+         }
+       }
+     }
+   }
+ }
